@@ -1,42 +1,41 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.test1,
+.test2 {
+  height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.test1 {
+  background-image: linear-gradient(
+    180deg,
+    hsl(240deg 30% 82%) 0%,
+    hsl(244deg 39% 83%) 11%,
+    hsl(248deg 49% 83%) 22%,
+    hsl(253deg 59% 83%) 33%,
+    hsl(257deg 68% 83%) 44%,
+    hsl(262deg 76% 83%) 56%,
+    hsl(266deg 83% 83%) 67%,
+    hsl(271deg 88% 83%) 78%,
+    hsl(276deg 92% 82%) 89%,
+    hsl(281deg 94% 81%) 100%
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.test2 {
+  background-image: linear-gradient(
+    180deg,
+    hsl(281deg 94% 81%) 0%,
+    hsl(299deg 74% 75%) 11%,
+    hsl(314deg 94% 74%) 22%,
+    hsl(322deg 100% 71%) 33%,
+    hsl(328deg 100% 67%) 44%,
+    hsl(334deg 100% 63%) 56%,
+    hsl(338deg 100% 58%) 67%,
+    hsl(340deg 100% 51%) 78%,
+    hsl(348deg 100% 50%) 89%,
+    hsl(0deg 100% 50%) 100%
+  );
 }

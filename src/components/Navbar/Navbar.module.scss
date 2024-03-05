@@ -1,0 +1,48 @@
+.headerWrapper {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+}
+
+.headerContainer {
+  height: 100%;
+  max-height: 75px;
+  padding: 10px 25px;
+
+  margin: 20px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+
+  .leftContainer {
+    display: flex;
+    flex-direction: row;
+
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+
+      @include default-transition();
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+      &:not(:last-of-type) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
