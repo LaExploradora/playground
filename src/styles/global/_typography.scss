@@ -1,0 +1,52 @@
+/* TODO: Add these to index.scss to overwrite default behaviour */
+
+@mixin h1() {
+  font-size: 94px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+@mixin h2() {
+  font-size: 59px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+@mixin h3() {
+  font-size: 47px;
+  font-weight: 600;
+}
+
+@mixin h4() {
+  font-size: 33px;
+  letter-spacing: 0.25px;
+}
+
+@mixin h5() {
+  font-size: 25px;
+}
+
+@mixin h6() {
+  font-size: 20px;
+  letter-spacing: 0.15px;
+}
+
+@mixin subtitle1() {
+  font-size: 16px;
+  letter-spacing: 0.15px;
+}
+
+@mixin subtitle2() {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body1() {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+@mixin body2() {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
