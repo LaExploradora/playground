@@ -5,24 +5,26 @@
   justify-content: center;
   align-items: flex-start;
 
-  border: 1px solid white;
+  // TODO: move to color variables;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.35);
   height: 300px;
-  background-image: linear-gradient(
-    to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
-  );
-  background-position: bottom right;
-  background-size: 20%;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(15px);
+  position: relative;
+}
+
+.introCard::before {
+  // TODO: refine the gradient color
+  background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(238,174,202,0.15) 0%, rgba(148,187,233,0.15) 100%);
+  border-radius: inherit;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .infoContainer {
@@ -33,6 +35,7 @@
 
 .title {
   @include h1();
+  margin: 0;
 }
 
 .subtitle {
